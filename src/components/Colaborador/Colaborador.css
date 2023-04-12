@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=Prata&display=swap");
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 85%;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin: 36px auto 0;
+}
+
+.colaborador {
+  width: 280px;
+  position: relative;
+}
+
+.colaborador .cabecalho {
+  border-radius: 10px 10px 0px 0px;
+}
+.colaborador img {
+  width: 100px;
+  border-radius: 50%;
+  position: relative;
+  bottom: -50px;
+}
+
+.colaborador .rodape {
+  background: #ffffff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 0px 0px 10px 10px;
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.colaborador .rodape h4 {
+  color: #6278f7;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.colaborador .rodape h5 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #212121;
+  padding: 0 16px;
+}
+
+.deletar {
+  position: absolute;
+  right: -10px;
+  color: #ffffff;
+  font-size: 2rem;
+  border-radius: 100%;
+  padding: 0.25rem 1rem;
+  cursor: pointer;
+  font-weight: 700;
+  top: -10px;
+  background-color: #212121;
+}

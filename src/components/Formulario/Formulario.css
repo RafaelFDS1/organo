@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Prata&display=swap");
+
+.form-section {
+  display: none;
+  max-width: 900px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 1em;
+  background-color: #f7f7f7;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+
+h2 {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  width: 90%;
+  margin: 22px auto;
+  font-size: 2.4rem;
+}

@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Prata&display=swap");
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --title-font-family: "Prata", serif;
+}
+* {
+  color: #212121;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--title-font-family);
+}
+
+h1 {
+  font-size: 3rem;
+  color: #6278f7;
+  text-align: center;
+}
+
+.underlined {
+  border-bottom: 4px solid #6278F7;
+  width: 64px;
+  display: block;
+  margin: 0 auto 80px;
+}

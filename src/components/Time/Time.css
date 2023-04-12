@@ -1,0 +1,18 @@
+.time {
+  text-align: center;
+  padding: 32px;
+  background-color: #d9f7e9;
+}
+
+.time h3 {
+  font-size: 32px;
+  margin: 0 0 8px;
+  display: inline-block;
+}
+
+.time .underline {
+  width: 32px;
+  margin: 0 auto;
+  border-bottom: 4px solid #57c278;
+  display: block;
+}

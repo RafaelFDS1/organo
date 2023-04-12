@@ -1,0 +1,2 @@
+# Organo
+É um organograma projetado na alura e construido totalmente em React, no objetivo de aprender o uso de hooks, criação e entendimento de components e seus props, entre outro. Ou seja, entender o básico de REACT.
