@@ -14,7 +14,7 @@ const FloatButton = (props) => {
   };
 
   return (
-    <button className="fab" onClick={renderForm}>
+    <button className="fab" onClick={renderForm} style={props.position}>
       <img src="/images/fab.svg" alt="abrir formulario" />
     </button>
   );

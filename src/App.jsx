@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { conectaApi } from "./api";
 import Banner from "./components/Banner";
 import FloatButton from "./components/FloatButton";
 import Formulario from "./components/Formulario";
@@ -46,9 +47,25 @@ const App = () => {
   const [colaboradores, setColaborador] = useState([]);
 
   const [display, setDisplay] = useState("");
+
   const aoNovoColab = (valor) => {
     setColaborador([...colaboradores, valor]);
+    conectaApi.addColaborator(valor, colaboradores)
   };
+
+  const clearAll = () => {
+    window.confirm("Você tem certeza que quer deletar TUDO? Não existe volta.") ?
+    console.log(true) :
+    console.log(false)
+  }
+
+  useEffect(() => {
+    const api = async () => {
+      setColaborador(await conectaApi.fetchApi());
+    };
+
+    api();
+  }, []);
 
   return (
     <div className="App">
@@ -58,7 +75,8 @@ const App = () => {
         times={times.map((time) => time.nome)}
         aoColaboradorCadastrado={(valor) => aoNovoColab(valor)}
       />
-      <FloatButton onClicked={(valor) => setDisplay(valor)} />
+      <FloatButton onClicked={(valor) => setDisplay(valor)} position={{right: "145px"}}/>
+      <FloatButton onClicked={() => clearAll()} position={{left: "145px"}}/>
       <h1>Minha Organização:</h1>
       <span className="underlined"></span>
       {times.map((time) => (
