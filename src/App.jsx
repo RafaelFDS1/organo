@@ -4,6 +4,7 @@ import FloatButton from "./components/FloatButton";
 import Formulario from "./components/Formulario";
 import Rodape from "./components/Rodape";
 import Time from "./components/Time";
+const localState = JSON.parse(localStorage.getItem("colaborators")) || [];
 
 const App = () => {
   const times = [
@@ -43,11 +44,13 @@ const App = () => {
       corSecundaria: "#FFEEDF",
     },
   ];
-  const [colaboradores, setColaborador] = useState([]);
+  const [colaboradores, setColaborador] = useState(localState);
 
   const [display, setDisplay] = useState("");
   const aoNovoColab = (valor) => {
     setColaborador([...colaboradores, valor]);
+    console.log();
+    localStorage.setItem("colaborators", JSON.stringify([...colaboradores, valor]));
   };
 
   return (
